@@ -36,3 +36,207 @@
     transform: rotate(360deg);
   }
 }
+/* Global Styles */
+/* Global */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #0b0c10;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+/* Neon Text */
+.neon-text {
+  color: #0ff;
+  text-shadow:
+    0 0 5px #0ff,
+    0 0 10px #0ff,
+    0 0 20px #0ff;
+}
+
+.flicker {
+  animation: flicker 2s infinite;
+}
+
+@keyframes flicker {
+  0%,19%,21%,23%,25%,54%,56%,100% { opacity:1; }
+  20%,22%,24%,55% { opacity:0.6; }
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* space between logo and links */
+  align-items: center;
+  padding: 15px 30px; /* reduce horizontal padding if needed */
+  background: rgba(0,0,0,0.7);
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box; /* ensure padding is included in width */
+  z-index: 1000;
+  overflow-x: auto; /* allows navbar links to scroll if too long */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap; /* prevent wrapping */
+}
+
+.nav-links li {
+  flex-shrink: 0; /* prevent shrinking of items */
+}
+
+
+.nav-links a {
+  color: #0ff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  text-shadow: 0 0 10px #0ff;
+}
+
+/* Sections */
+.section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+}
+
+/* Skills */
+.skill-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 300px;
+}
+
+.skill span {
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.bar {
+  width: 100%;
+  background: rgba(255,255,255,0.1);
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background: #0ff;
+  border-radius: 10px;
+  transition: width 1s ease-in-out;
+}
+
+/* Projects */
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project-card {
+  background: rgba(0,0,0,0.5);
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #0ff;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  color: #0ff;
+  text-decoration: none;
+  border: 1px solid #0ff;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #0ff;
+  color: #000;
+  box-shadow: 0 0 10px #0ff;
+}
+
+/* Education.css - Neon Theme */
+.education-section {
+  padding: 20px;
+  max-width: 700px;
+  margin: auto;
+  background-color: #0a0a0a; /* Dark background */
+  border-radius: 12px;
+  box-shadow: 0 0 20px #3ed2ec, 0 0 40px #4bc8c8;
+}
+
+.education-section h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #42c2b3;
+  text-shadow: 0 0 5px #13c8d1, 0 0 10px #09c7e9, 0 0 20px #1cc3dc;
+  font-size: 2rem;
+}
+
+.education-item {
+  background: #111;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #2ca89e;
+  box-shadow: 0 0 10px #67e3fe, 0 0 20px #30e0e0;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.education-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #2bd1eb, 0 0 40px #1b9dac;
+}
+
+.education-item h3 {
+  margin: 0;
+  color: #30dde0;
+  text-shadow: 0 0 5px #3caa9f;
+}
+
+.education-item h4 {
+  margin: 5px 0;
+  color: #3db3ab;
+  text-shadow: 0 0 3px #29808d;
+}
+
+.education-item span {
+  font-size: 0.9rem;
+  color: #1c7a82;
+  text-shadow: 0 0 3px #41b8ba;
+}
+
+.education-item p {
+  margin-top: 10px;
+  color: #63f005;
+  text-shadow: 0 0 2px #5cd0f6;
+}
