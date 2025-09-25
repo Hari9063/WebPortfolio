@@ -4,7 +4,7 @@ const Projects = () => {
   const projects = [
     { title: "Library Management", description: "A web-based application to manage books, members, and loans efficiently It supports adding, updating, and tracking library records with ease Built using Java, Spring Boot, React, and MySQL for seamless performance"
       , link: "https://libraryapp-3xxi.onrender.com",blink:"https://libarymanagement-6.onrender.com/api/books" },
-    { title: "Web Story App", description: "A web app that generates interactive stories based on current weather conditions It provides real-time weather updates and visualizes them creatively in a story format Built using JavaScript, APIs, and modern web technologies for an engaging user"
+    { title: "WeatherStory App", description: "A web app that generates interactive stories based on current weather conditions It provides real-time weather updates and visualizes them creatively in a story format Built using JavaScript, APIs, and modern web technologies for an engaging user"
       , link: "https://weatherapp-bkb7.onrender.com" ,blink:"https://weatherappbackend-3.onrender.com/api/weather/Bengaluru" }
   ];
 
